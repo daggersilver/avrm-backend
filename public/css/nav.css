@@ -1,0 +1,16 @@
+.dashboard-nav {
+    background-color: rgb(37, 36, 36);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 2em;
+}
+
+.dashboard-nav a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    margin-right: 1em;
+    padding: 0.2em 1em;
+}

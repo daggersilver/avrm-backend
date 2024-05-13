@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    padding: 1.4em;
+}
+
+body {
+    width: 100vw;
+}
+
+th, td {
+    padding: 0.5em 1em;
+    width: 180px;
+}
+
+th{
+    background-color: blue;
+    color: white
+}
+
+table {
+    width: 100%;
+}
+

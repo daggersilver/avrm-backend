@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Homepage
+        link(rel="stylesheet", href="css/index.css")
+    body 
+        div(id="text-box")
+            h1 Automatic Ration Vending Machine 
+            h1 Cloud Portal
+        form(action="/", method="post") 
+            h1 Login
+            label(for="username") User ID 
+            input(type="text" id="username" name="username" placeholder="user id" autocomplete="off" required)
+            label(for="password") Password
+            input(type="password" id="password" name="password" placeholder="password" autocomplete="off" required)
+            button(type="submit" ) Submit  

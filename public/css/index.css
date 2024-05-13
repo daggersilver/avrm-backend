@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/wheat.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(77, 42, 6, 0.644);
+    background-blend-mode: multiply;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+    padding-top: 10%;
+}
+
+body > div {
+    font-size: 1.5em;
+    width: 50%;
+}
+
+form {
+    width: 500px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.452);
+    height: fit-content;
+}
+
+form input {
+    padding: 0.4em 1em;
+    outline: none;
+}
+
+form label {
+    margin-top: 20px;
+}
+
+form button[type='submit'] {
+    width: fit-content;
+    padding: 0.5em 1em;
+    margin-top: 20px;
+}

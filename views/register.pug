@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Register
+        link(rel="stylesheet", href="css/register.css")
+    body 
+        include ./partials/dashboard-nav.pug
+
+        div(id="main-container")
+            h1 Register
+            form(id="register-form" action="/register", method="post")
+                label(for="firstname" id="firstname-label") First Name
+                input(type="text" id="firstname" name="firstname" required placeholder="Firstname" autocomplete="off")
+                label(for="lastname" id="lastname-label") Last Name
+                input(type="text" id="lastname" name="lastname" required placeholder="Lastname" autocomplete="off")
+                label(for="phone-number" id="phone-label") Phone Number
+                    small (Format: 1234567890)
+                input(type="tel" id="phone-number" name="phone" pattern="[0-9]{10}" required placeholder="e.g. 9956772345" autocomplete="off") 
+                label(for="adhaar" id="adhaar-label") Adhaar Number
+                input(type="text" id="adhaar" name="adhaar" required placeholder="e.g. 234523456789" autocomplete="off")
+                label(for="dob" id="dob-label") Date Of Birth
+                input(type="date" id="dob" name="dob" required autocomplete="off")
+                label(for="rfid" id="rfid-label") RFID Number
+                input(type="text" id="rfid" name="rfid" required placeholder="e.g. 458934" autocomplete="off")
+                label(for="family-size" id="family-size-label") Total Members in Family
+                input(type="number" id="family-size" name="familySize" value=1 required autocomplete="off")
+                label(for="family-income" id="family-income-label") Total Family Income 
+                input(type="number" id="family-income" name="familyIncome" required placeholder="e.g. 80000" autocomplete="off")
+                button(type="submit" id="submit-btn" class="btn") Submit

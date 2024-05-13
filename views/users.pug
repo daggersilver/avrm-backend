@@ -1,0 +1,35 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Users
+        link(rel="stylesheet", href="/css/users.css")
+    body 
+        include ./partials/dashboard-nav.pug
+
+        h1 List of registered users
+        table
+            tr
+                th Firstname
+                th Lastname
+                th Phone Number 
+                th Adhaar Number
+                th Date of Birth
+                th Unique ID
+                th Family Size
+                th Family Income (Rs)
+                th Wheat Allotment (Kg)
+                th Rice Allotment (Kg)
+            each user in users
+                tr
+                    td=user.firstname
+                    td=user.lastname
+                    td=user.phone
+                    td=user.adhaar
+                    td=user.dob
+                    td=user.rfid
+                    td=user.familySize
+                    td=user.familyIncome
+                    td=user.wheatAllotment
+                    td=user.riceAllotment

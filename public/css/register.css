@@ -1,0 +1,129 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#main-container {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-container h1 {
+    margin-bottom: 1em;
+}
+
+#register-form {
+    width: 60%;
+    background-color: beige;
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    grid-template-areas: 
+        "label1 label2"
+        "firstname lastname"
+        "label3 phone"
+        "label4 adhaar"
+        "label5 dob"
+        "label6 rfid"
+        "label7 familysize"
+        "label8 familyincome"
+        "submit submit";
+    gap: 0.5em 2em;
+}
+
+#register-form > input {
+    padding: 0.5em 1em;
+    outline: none;
+    height: min-content;
+}
+
+#register-form > label {
+    margin-top: 1em;
+}
+
+#firstname-label {
+    grid-area: label1;
+}
+
+#lastname-label {
+    grid-area: label2;
+}
+
+#phone-label {
+    grid-area: label3;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#firstname {
+    grid-area: firstname;
+}
+
+#lastname {
+    grid-area: lastname;
+}
+
+#phone-number {
+    grid-area: phone;
+}
+
+#adhaar {
+    grid-area: adhaar;
+}
+
+#adhaar-label {
+    grid-area: label4;
+}
+
+#dob {
+    grid-area: dob;
+}
+
+#dob-label {
+    grid-area: label5;
+}
+
+#rfid {
+    grid-area: rfid;
+}
+
+#rfid-label {
+    grid-area: label6;
+}
+
+
+#family-size {
+    grid-area: familysize;
+}
+
+#family-income-label {
+    grid-area: label8;
+}
+
+#family-income {
+    grid-area: familyincome;
+}
+
+#family-size-label {
+    grid-area: label7;
+}
+
+#submit-btn {
+    grid-area: submit;
+    margin: 1em 0;
+}
+
+.btn {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 2em;
+    cursor: pointer;
+}
+
